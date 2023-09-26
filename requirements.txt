@@ -1,0 +1,9 @@
+azure-core
+azure-identity
+adal
+python-dotenv
+pytest
+azure-synapse
+requests
+check-wheel-contents
+setuptools

@@ -1,0 +1,3 @@
+pipelines:
+ - first_Batch1_pipeline_scd2
+ - second_Batch1_pipeline_scd2

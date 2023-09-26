@@ -22,7 +22,7 @@ with DAG(
       execution_delta=timedelta(minutes=10),
       timeout=300,
       poke_interval=60,
-      mode='reschedule',
+      check_existence=True
   )
   sensor_seconddag = ExternalTaskSensor(
       task_id="secondtasksensor",
@@ -31,7 +31,7 @@ with DAG(
       execution_delta=timedelta(minutes=10),
       timeout=300,
       poke_interval=60,
-      mode='reschedule',
+      check_existence=True
   )
   end_task = BashOperator(
       task_id="end_task",
