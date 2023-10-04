@@ -1,0 +1,22 @@
+business_critical_batch:
+ - first_Batch1_pipeline_scd2
+ - second_Batch1_pipeline_scd2
+
+recon_deletes_batch:
+ - delete_pipeline1
+ - delete_pipeline2
+ - delete_pipeline3
+
+jde_acq_batch:
+ - acq_pipeline1
+ - acq_pipeline2
+ - acq_pipeline3
+
+vts_batch:
+ - vts_pipeline1
+ - vts_pipeline2
+ - vts_pipeline3
+
+freshservices_batch:
+ - fs_pipeline1
+ - fs_pipeline2
