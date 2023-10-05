@@ -28,7 +28,7 @@ load_dotenv()
 tenantid = os.getenv('TENANTID')
 clientid = os.getenv('CLIENTID')
 clientsecret = os.getenv('CLIENTSECRET')
-endpoint = 'px-synapse-poc'
+endpoint = 'px-synapse-poc'   #set name to synapse workspace
 pipelinename = '' #placeholder for the pipeline name variable
 
 
