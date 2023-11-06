@@ -88,7 +88,7 @@ def task1(pipelinename):
        sys.exit(1)
 
 # Initialize the Batch by reading the yaml file and getting all pipelines to run dynamically
-with open('/home/devairflow7/dags/synapseairflowpoc-main/batch_pipelines.yml') as file:   #change the path of this file
+with open(f'/home/devairflow7/dags/synapseairflowpoc-main/{env}_batch_pipelines.yml') as file:   #change the path of this file
     try:
         data = yaml.safe_load(file)
     except yaml.YAMLError as exception:
