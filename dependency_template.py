@@ -122,7 +122,7 @@ with DAG(dag_id=f"{env}_dependency_pipeline_test_dag", default_args=default_args
             listTemp = data[yamlHeader][i].split(',')
             for j in range(0,len(listTemp)):
                 pipeline = listTemp[j]
-                listTempTasks.append(PythonOperator(task_id=f'dependTask_{pipeline}',python_callable=task1, op_args=[j], depends_on_past=True))
+                listTempTasks.append(PythonOperator(task_id=f'dependTask_{pipeline}',python_callable=task1, op_args=[pipeline], depends_on_past=True))
             listMain.append(listTempTasks)
             listTempTasks = []
         else:
