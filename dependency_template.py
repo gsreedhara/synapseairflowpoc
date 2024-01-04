@@ -74,7 +74,7 @@ def task1(pipelinename):
         res_pipelineruns = getpipelinerun(endpoint, res, tenantid, clientid, clientsecret)
         print(f"The status of the pipeline run for runID: {res} is: {res_pipelineruns}")
         status = res_pipelineruns
-        if status == 'Failed':
+        if status == 'Failed' or status == 'Cancelled':
             get_activity_runs = queryActivityRuns(endpoint, pipelinename, res, tenantid, clientid, clientsecret)
             logger.info(f"pipeline activity status by activity runs :\n {get_activity_runs}")
             sys.exit(1)
